@@ -1,0 +1,926 @@
+2018-10-10 21:30:22 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec: startup date [Wed Oct 10 21:30:22 CST 2018]; root of context hierarchy
+2018-10-10 21:30:22 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:30:22 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:30:22 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:30:27 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:30:27 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:30:31 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:30:31 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:30:31 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:30:31 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:30:31 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:30:35 main INFO Disable delta property : false
+2018-10-10 21:30:35 main INFO Single vip registry refresh property : null
+2018-10-10 21:30:35 main INFO Force full registry fetch : false
+2018-10-10 21:30:35 main INFO Application is null : false
+2018-10-10 21:30:35 main INFO Registered Applications size is zero : true
+2018-10-10 21:30:35 main INFO Application version is -1: true
+2018-10-10 21:30:35 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:30:36 main INFO The response status is 200
+2018-10-10 21:30:36 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:30:36 main INFO Discovery Client initialized at timestamp 1539178236260 with initial instances count: 1
+2018-10-10 21:30:41 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:30:53 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:30:53 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 21:30:54 main INFO The following profiles are active: dev
+2018-10-10 21:30:57 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 21:30:58 main INFO BeanFactory id=b6c8190b-3dc3-3cca-9cc4-e32d9f32b99f
+2018-10-10 21:30:58 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:30:58 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:30:58 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$16b34f32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:30:58 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:30:59 main INFO Starting service Tomcat
+2018-10-10 21:30:59 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 21:31:00 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 21:31:00 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 6164 ms
+2018-10-10 21:31:01 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1850f2da: startup date [Wed Oct 10 21:31:01 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:31:02 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:31:03 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 21:31:03 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 21:31:03 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 21:31:03 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 21:31:03 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 21:31:03 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 21:31:03 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 21:31:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:31:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:31:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:31:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:31:09 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:30:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec
+2018-10-10 21:31:09 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:31:09 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:31:09 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:31:10 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:30:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec] and template loader path [classpath:/templates/]
+2018-10-10 21:31:10 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 21:31:11 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:31:11 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:31:11 main INFO Registering beans for JMX exposure on startup
+2018-10-10 21:31:11 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 21:31:11 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 21:31:11 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 21:31:11 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 21:31:11 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 21:31:11 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1947596f,type=ConfigurationPropertiesRebinder]
+2018-10-10 21:31:11 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 21:31:12 main INFO Starting beans in phase 0
+2018-10-10 21:31:12 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:31:12 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:31:12 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:31:12 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:31:12 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:31:12 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:31:12 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:31:12 main INFO Disable delta property : false
+2018-10-10 21:31:12 main INFO Single vip registry refresh property : null
+2018-10-10 21:31:12 main INFO Force full registry fetch : false
+2018-10-10 21:31:12 main INFO Application is null : false
+2018-10-10 21:31:12 main INFO Registered Applications size is zero : true
+2018-10-10 21:31:12 main INFO Application version is -1: true
+2018-10-10 21:31:12 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:31:12 main INFO The response status is 200
+2018-10-10 21:31:12 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 21:31:12 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 21:31:12 main INFO Discovery Client initialized at timestamp 1539178272731 with initial instances count: 1
+2018-10-10 21:31:12 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 21:31:12 main INFO Saw local status change event StatusChangeEvent [timestamp=1539178272764, current=UP, previous=STARTING]
+2018-10-10 21:31:12 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 21:31:12 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 21:31:12 main INFO Starting beans in phase 2147483647
+2018-10-10 21:31:12 main INFO Context refreshed
+2018-10-10 21:31:12 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 21:31:13 main INFO Scanning for api listing references
+2018-10-10 21:31:13 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:31:13 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:31:13 main INFO Using a shared selector for servlet write/read
+2018-10-10 21:31:13 main INFO Updating port to 8385
+2018-10-10 21:31:13 main INFO Started WebPortalApplication in 56.126 seconds (JVM running for 62.261)
+2018-10-10 21:31:14 RMI TCP Connection(12)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:31:22 RMI TCP Connection(12)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78675cfa: startup date [Wed Oct 10 21:32:14 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:32:14 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:32:15 http-nio-8385-exec-2 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 21:32:15 http-nio-8385-exec-2 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 21:32:15 http-nio-8385-exec-2 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 21:32:15 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:32:15 http-nio-8385-exec-2 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[192.168.1.101:8799],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.101:8799;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4b6a35c9
+2018-10-10 21:32:16 PollingServerListUpdater-0 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:36:12 AsyncResolver-bootstrap-executor-0 INFO Resolving eureka endpoints via configuration
+2018-10-10 21:36:38 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4264b240: startup date [Wed Oct 10 21:36:38 CST 2018]; root of context hierarchy
+2018-10-10 21:36:38 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:36:39 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:36:39 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cb07f0a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:36:43 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:36:43 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:36:45 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:36:45 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:36:45 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:36:45 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:36:46 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:36:47 main INFO Disable delta property : false
+2018-10-10 21:36:47 main INFO Single vip registry refresh property : null
+2018-10-10 21:36:47 main INFO Force full registry fetch : false
+2018-10-10 21:36:47 main INFO Application is null : false
+2018-10-10 21:36:47 main INFO Registered Applications size is zero : true
+2018-10-10 21:36:47 main INFO Application version is -1: true
+2018-10-10 21:36:47 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:36:47 main INFO The response status is 200
+2018-10-10 21:36:48 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:36:48 main INFO Discovery Client initialized at timestamp 1539178608006 with initial instances count: 3
+2018-10-10 21:36:52 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:36:58 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:36:58 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 21:36:58 main INFO The following profiles are active: dev
+2018-10-10 21:37:00 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 21:37:01 main INFO BeanFactory id=b6c8190b-3dc3-3cca-9cc4-e32d9f32b99f
+2018-10-10 21:37:01 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:37:01 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:37:01 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$e11a93ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:37:01 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cb07f0a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:37:02 main INFO Starting service Tomcat
+2018-10-10 21:37:02 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 21:37:02 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 21:37:02 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 4025 ms
+2018-10-10 21:37:03 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fd35a92: startup date [Wed Oct 10 21:37:03 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64f4f12
+2018-10-10 21:37:03 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:37:05 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 21:37:05 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 21:37:05 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 21:37:05 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 21:37:05 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 21:37:05 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 21:37:05 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 21:37:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:37:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:37:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:37:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:37:10 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64f4f12: startup date [Wed Oct 10 21:36:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4264b240
+2018-10-10 21:37:10 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:37:10 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:37:10 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:37:11 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64f4f12: startup date [Wed Oct 10 21:36:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4264b240] and template loader path [classpath:/templates/]
+2018-10-10 21:37:11 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 21:37:11 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:37:11 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:37:11 main INFO Registering beans for JMX exposure on startup
+2018-10-10 21:37:11 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 21:37:11 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 21:37:11 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 21:37:11 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 21:37:11 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 21:37:11 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=64f4f12,type=ConfigurationPropertiesRebinder]
+2018-10-10 21:37:11 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 21:37:12 main INFO Starting beans in phase 0
+2018-10-10 21:37:12 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:37:12 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:37:12 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:37:12 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:37:12 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:37:12 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:37:13 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:37:13 main INFO Disable delta property : false
+2018-10-10 21:37:13 main INFO Single vip registry refresh property : null
+2018-10-10 21:37:13 main INFO Force full registry fetch : false
+2018-10-10 21:37:13 main INFO Application is null : false
+2018-10-10 21:37:13 main INFO Registered Applications size is zero : true
+2018-10-10 21:37:13 main INFO Application version is -1: true
+2018-10-10 21:37:13 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:37:13 main INFO The response status is 200
+2018-10-10 21:37:13 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 21:37:13 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 21:37:13 main INFO Discovery Client initialized at timestamp 1539178633023 with initial instances count: 3
+2018-10-10 21:37:13 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 21:37:13 main INFO Saw local status change event StatusChangeEvent [timestamp=1539178633062, current=UP, previous=STARTING]
+2018-10-10 21:37:13 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 21:37:13 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 21:37:13 main INFO Starting beans in phase 2147483647
+2018-10-10 21:37:13 main INFO Context refreshed
+2018-10-10 21:37:13 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 21:37:13 main INFO Scanning for api listing references
+2018-10-10 21:37:13 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:37:13 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:37:13 main INFO Using a shared selector for servlet write/read
+2018-10-10 21:37:13 main INFO Updating port to 8385
+2018-10-10 21:37:13 main INFO Started WebPortalApplication in 40.07 seconds (JVM running for 47.212)
+2018-10-10 21:37:14 RMI TCP Connection(6)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:37:20 RMI TCP Connection(6)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:37:24 http-nio-8385-exec-3 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 21:37:24 http-nio-8385-exec-3 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 21:37:24 http-nio-8385-exec-3 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 111 ms
+2018-10-10 21:37:24 http-nio-8385-exec-3 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35bd8218: startup date [Wed Oct 10 21:37:24 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64f4f12
+2018-10-10 21:37:24 http-nio-8385-exec-3 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:37:25 http-nio-8385-exec-3 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[192.168.1.101:8799],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.101:8799;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6942cf88
+2018-10-10 21:37:26 PollingServerListUpdater-0 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:40:38 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@72bd06ca: startup date [Wed Oct 10 21:40:38 CST 2018]; root of context hierarchy
+2018-10-10 21:40:38 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:40:39 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:40:39 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b0a7236f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:40:43 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:40:43 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:40:45 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:40:45 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:40:45 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:40:45 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:40:46 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:40:47 main INFO Disable delta property : false
+2018-10-10 21:40:47 main INFO Single vip registry refresh property : null
+2018-10-10 21:40:47 main INFO Force full registry fetch : false
+2018-10-10 21:40:47 main INFO Application is null : false
+2018-10-10 21:40:47 main INFO Registered Applications size is zero : true
+2018-10-10 21:40:47 main INFO Application version is -1: true
+2018-10-10 21:40:47 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:40:48 main INFO The response status is 200
+2018-10-10 21:40:48 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:40:48 main INFO Discovery Client initialized at timestamp 1539178848401 with initial instances count: 3
+2018-10-10 21:40:52 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:40:57 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:40:57 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 21:40:57 main INFO The following profiles are active: dev
+2018-10-10 21:41:00 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 21:41:00 main INFO BeanFactory id=b6c8190b-3dc3-3cca-9cc4-e32d9f32b99f
+2018-10-10 21:41:00 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:41:01 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:41:01 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$c6b9c6b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:41:01 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b0a7236f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:41:01 main INFO Starting service Tomcat
+2018-10-10 21:41:01 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 21:41:02 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 21:41:02 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 4046 ms
+2018-10-10 21:41:03 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1eddca25: startup date [Wed Oct 10 21:41:03 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28768e25
+2018-10-10 21:41:03 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:41:05 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 21:41:05 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 21:41:05 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 21:41:05 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 21:41:05 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 21:41:05 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 21:41:05 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 21:41:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:41:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:41:09 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:41:09 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:41:09 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28768e25: startup date [Wed Oct 10 21:40:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@72bd06ca
+2018-10-10 21:41:09 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:41:09 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:41:10 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:41:10 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28768e25: startup date [Wed Oct 10 21:40:58 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@72bd06ca] and template loader path [classpath:/templates/]
+2018-10-10 21:41:10 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 21:41:11 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:41:11 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:41:11 main INFO Registering beans for JMX exposure on startup
+2018-10-10 21:41:11 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 21:41:11 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 21:41:11 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 21:41:11 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 21:41:11 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 21:41:11 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28768e25,type=ConfigurationPropertiesRebinder]
+2018-10-10 21:41:11 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 21:41:12 main INFO Starting beans in phase 0
+2018-10-10 21:41:12 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:41:12 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:41:12 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:41:12 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:41:12 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:41:12 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:41:12 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:41:12 main INFO Disable delta property : false
+2018-10-10 21:41:12 main INFO Single vip registry refresh property : null
+2018-10-10 21:41:12 main INFO Force full registry fetch : false
+2018-10-10 21:41:12 main INFO Application is null : false
+2018-10-10 21:41:12 main INFO Registered Applications size is zero : true
+2018-10-10 21:41:12 main INFO Application version is -1: true
+2018-10-10 21:41:12 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:41:12 main INFO The response status is 200
+2018-10-10 21:41:12 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 21:41:12 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 21:41:12 main INFO Discovery Client initialized at timestamp 1539178872789 with initial instances count: 3
+2018-10-10 21:41:12 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 21:41:12 main INFO Saw local status change event StatusChangeEvent [timestamp=1539178872820, current=UP, previous=STARTING]
+2018-10-10 21:41:12 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 21:41:12 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 21:41:12 main INFO Starting beans in phase 2147483647
+2018-10-10 21:41:12 main INFO Context refreshed
+2018-10-10 21:41:12 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 21:41:13 main INFO Scanning for api listing references
+2018-10-10 21:41:13 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:41:13 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:41:13 main INFO Using a shared selector for servlet write/read
+2018-10-10 21:41:13 main INFO Updating port to 8385
+2018-10-10 21:41:13 main INFO Started WebPortalApplication in 39.395 seconds (JVM running for 45.551)
+2018-10-10 21:41:14 RMI TCP Connection(3)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:41:19 RMI TCP Connection(3)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:41:30 http-nio-8385-exec-2 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 21:41:30 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 77 ms
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@452f66d7: startup date [Wed Oct 10 21:41:31 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28768e25
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:41:31 http-nio-8385-exec-2 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[192.168.1.101:8799],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.101:8799;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@53acb8c1
+2018-10-10 21:41:32 PollingServerListUpdater-0 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:48:30 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec: startup date [Wed Oct 10 21:48:30 CST 2018]; root of context hierarchy
+2018-10-10 21:48:30 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:48:31 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:48:31 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:48:34 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:48:35 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:48:37 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:48:37 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:48:37 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:48:37 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:48:37 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:48:39 main INFO Disable delta property : false
+2018-10-10 21:48:39 main INFO Single vip registry refresh property : null
+2018-10-10 21:48:39 main INFO Force full registry fetch : false
+2018-10-10 21:48:39 main INFO Application is null : false
+2018-10-10 21:48:39 main INFO Registered Applications size is zero : true
+2018-10-10 21:48:39 main INFO Application version is -1: true
+2018-10-10 21:48:39 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:48:39 main INFO The response status is 200
+2018-10-10 21:48:39 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:48:39 main INFO Discovery Client initialized at timestamp 1539179319361 with initial instances count: 2
+2018-10-10 21:48:43 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:48:48 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:48:48 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 21:48:48 main INFO The following profiles are active: dev
+2018-10-10 21:48:50 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 21:48:51 main INFO BeanFactory id=b6c8190b-3dc3-3cca-9cc4-e32d9f32b99f
+2018-10-10 21:48:51 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:48:51 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:48:51 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$16b34f32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:48:51 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:48:51 main INFO Starting service Tomcat
+2018-10-10 21:48:51 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 21:48:52 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 21:48:52 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 3407 ms
+2018-10-10 21:48:53 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dd3981e: startup date [Wed Oct 10 21:48:53 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:48:53 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:48:54 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 21:48:54 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 21:48:54 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 21:48:54 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 21:48:54 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 21:48:54 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 21:48:54 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 21:48:58 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:48:58 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:48:58 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:48:58 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:48:58 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:48:48 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec
+2018-10-10 21:48:58 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:48:58 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:48:59 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:48:59 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:48:48 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec] and template loader path [classpath:/templates/]
+2018-10-10 21:48:59 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 21:48:59 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:48:59 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:49:00 main INFO Registering beans for JMX exposure on startup
+2018-10-10 21:49:00 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 21:49:00 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 21:49:00 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 21:49:00 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 21:49:00 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 21:49:00 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1947596f,type=ConfigurationPropertiesRebinder]
+2018-10-10 21:49:00 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 21:49:01 main INFO Starting beans in phase 0
+2018-10-10 21:49:01 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:49:01 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:49:01 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:49:01 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:49:01 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:49:01 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:49:01 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:49:01 main INFO Disable delta property : false
+2018-10-10 21:49:01 main INFO Single vip registry refresh property : null
+2018-10-10 21:49:01 main INFO Force full registry fetch : false
+2018-10-10 21:49:01 main INFO Application is null : false
+2018-10-10 21:49:01 main INFO Registered Applications size is zero : true
+2018-10-10 21:49:01 main INFO Application version is -1: true
+2018-10-10 21:49:01 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:49:01 main INFO The response status is 200
+2018-10-10 21:49:01 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 21:49:01 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 21:49:01 main INFO Discovery Client initialized at timestamp 1539179341196 with initial instances count: 2
+2018-10-10 21:49:01 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 21:49:01 main INFO Saw local status change event StatusChangeEvent [timestamp=1539179341221, current=UP, previous=STARTING]
+2018-10-10 21:49:01 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 21:49:01 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 21:49:01 main INFO Starting beans in phase 2147483647
+2018-10-10 21:49:01 main INFO Context refreshed
+2018-10-10 21:49:01 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 21:49:01 main INFO Scanning for api listing references
+2018-10-10 21:49:01 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:49:01 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:49:01 main INFO Using a shared selector for servlet write/read
+2018-10-10 21:49:01 main INFO Updating port to 8385
+2018-10-10 21:49:01 main INFO Started WebPortalApplication in 35.673 seconds (JVM running for 40.962)
+2018-10-10 21:49:02 RMI TCP Connection(8)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 21:49:08 RMI TCP Connection(8)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 105 ms
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33746d1f: startup date [Wed Oct 10 21:49:08 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:49:08 http-nio-8385-exec-2 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[192.168.1.101:8799],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.101:8799;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@338764e8
+2018-10-10 21:49:09 PollingServerListUpdater-0 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:51:37 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:51:37 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35841320: startup date [Wed Oct 10 21:51:37 CST 2018]; root of context hierarchy
+2018-10-10 21:51:38 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:51:38 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8128658c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:51:44 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:51:44 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:51:49 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:51:49 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:51:49 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:51:49 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:51:49 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:51:52 main INFO Disable delta property : false
+2018-10-10 21:51:52 main INFO Single vip registry refresh property : null
+2018-10-10 21:51:52 main INFO Force full registry fetch : false
+2018-10-10 21:51:52 main INFO Application is null : false
+2018-10-10 21:51:52 main INFO Registered Applications size is zero : true
+2018-10-10 21:51:52 main INFO Application version is -1: true
+2018-10-10 21:51:52 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:51:52 main INFO The response status is 200
+2018-10-10 21:51:52 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:51:52 main INFO Discovery Client initialized at timestamp 1539179512636 with initial instances count: 0
+2018-10-10 21:51:53 main INFO Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@35841320: startup date [Wed Oct 10 21:51:37 CST 2018]; root of context hierarchy
+2018-10-10 21:51:53 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:51:53 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:52:35 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec: startup date [Wed Oct 10 21:52:35 CST 2018]; root of context hierarchy
+2018-10-10 21:52:35 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 21:52:35 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:52:36 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:52:39 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:52:40 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:52:42 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:52:42 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:52:42 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:52:42 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:52:42 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:52:44 main INFO Disable delta property : false
+2018-10-10 21:52:44 main INFO Single vip registry refresh property : null
+2018-10-10 21:52:44 main INFO Force full registry fetch : false
+2018-10-10 21:52:44 main INFO Application is null : false
+2018-10-10 21:52:44 main INFO Registered Applications size is zero : true
+2018-10-10 21:52:44 main INFO Application version is -1: true
+2018-10-10 21:52:44 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:52:44 main INFO The response status is 200
+2018-10-10 21:52:44 main INFO Not registering with Eureka server per configuration
+2018-10-10 21:52:44 main INFO Discovery Client initialized at timestamp 1539179564341 with initial instances count: 1
+2018-10-10 21:52:48 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:52:53 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:52:53 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 21:52:53 main INFO The following profiles are active: dev
+2018-10-10 21:52:56 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 21:52:56 main INFO BeanFactory id=b6c8190b-3dc3-3cca-9cc4-e32d9f32b99f
+2018-10-10 21:52:56 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:52:56 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:52:56 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$16b34f32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:52:56 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a0abee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 21:52:56 main INFO Starting service Tomcat
+2018-10-10 21:52:56 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 21:52:57 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 21:52:57 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 3340 ms
+2018-10-10 21:52:58 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7dd3981e: startup date [Wed Oct 10 21:52:58 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:52:58 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:52:59 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 21:52:59 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 21:52:59 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 21:52:59 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 21:52:59 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 21:52:59 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 21:52:59 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 21:53:03 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:53:03 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:53:03 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 21:53:03 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 21:53:03 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:52:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec
+2018-10-10 21:53:03 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:53:03 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:53:03 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 21:53:04 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f: startup date [Wed Oct 10 21:52:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7ae0a9ec] and template loader path [classpath:/templates/]
+2018-10-10 21:53:04 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 21:53:04 main INFO Shutting down DiscoveryClient ...
+2018-10-10 21:53:04 main INFO Completed shut down of DiscoveryClient
+2018-10-10 21:53:04 main INFO Registering beans for JMX exposure on startup
+2018-10-10 21:53:05 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 21:53:05 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 21:53:05 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 21:53:05 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 21:53:05 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 21:53:05 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1947596f,type=ConfigurationPropertiesRebinder]
+2018-10-10 21:53:05 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 21:53:05 main INFO Starting beans in phase 0
+2018-10-10 21:53:05 main INFO Setting initial instance status as: STARTING
+2018-10-10 21:53:05 main INFO Initializing Eureka in region us-east-1
+2018-10-10 21:53:05 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 21:53:05 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 21:53:05 main INFO Using XML encoding codec XStreamXml
+2018-10-10 21:53:05 main INFO Using XML decoding codec XStreamXml
+2018-10-10 21:53:05 main INFO Resolving eureka endpoints via configuration
+2018-10-10 21:53:05 main INFO Disable delta property : false
+2018-10-10 21:53:05 main INFO Single vip registry refresh property : null
+2018-10-10 21:53:05 main INFO Force full registry fetch : false
+2018-10-10 21:53:05 main INFO Application is null : false
+2018-10-10 21:53:05 main INFO Registered Applications size is zero : true
+2018-10-10 21:53:05 main INFO Application version is -1: true
+2018-10-10 21:53:05 main INFO Getting all instance registry info from the eureka server
+2018-10-10 21:53:05 main INFO The response status is 200
+2018-10-10 21:53:05 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 21:53:05 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 21:53:05 main INFO Discovery Client initialized at timestamp 1539179585952 with initial instances count: 1
+2018-10-10 21:53:05 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 21:53:05 main INFO Saw local status change event StatusChangeEvent [timestamp=1539179585983, current=UP, previous=STARTING]
+2018-10-10 21:53:05 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 21:53:06 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 21:53:06 main INFO Starting beans in phase 2147483647
+2018-10-10 21:53:06 main INFO Context refreshed
+2018-10-10 21:53:06 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 21:53:06 main INFO Scanning for api listing references
+2018-10-10 21:53:06 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:53:06 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 21:53:06 main INFO Using a shared selector for servlet write/read
+2018-10-10 21:53:06 main INFO Updating port to 8385
+2018-10-10 21:53:06 main INFO Started WebPortalApplication in 35.999 seconds (JVM running for 43.489)
+2018-10-10 21:53:06 RMI TCP Connection(9)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 21:53:12 RMI TCP Connection(9)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 21:53:30 http-nio-8385-exec-2 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 21:53:30 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 21:53:30 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 99 ms
+2018-10-10 21:53:39 http-nio-8385-exec-3 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2765b855: startup date [Wed Oct 10 21:53:39 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1947596f
+2018-10-10 21:53:39 http-nio-8385-exec-3 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 21:53:39 http-nio-8385-exec-3 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 21:53:40 http-nio-8385-exec-3 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 21:53:40 http-nio-8385-exec-3 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 21:53:40 http-nio-8385-exec-3 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 21:53:40 http-nio-8385-exec-3 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@263ed532
+2018-10-10 21:53:40 http-nio-8385-exec-3 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: web-service] with root cause
+com.netflix.client.ClientException: Load balancer does not have available server for client: web-service
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10307)
+	at rx.Observable.subscribe(Observable.java:10274)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:445)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:342)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:117)
+	at org.springframework.cloud.netflix.feign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:97)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy132.testUser(Unknown Source)
+	at com.footmark.portal.controller.TestUser.testUser(TestUser.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-10-10 21:58:05 AsyncResolver-bootstrap-executor-0 INFO Resolving eureka endpoints via configuration
+2018-10-10 22:03:05 AsyncResolver-bootstrap-executor-0 INFO Resolving eureka endpoints via configuration
+2018-10-10 22:06:54 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@35841320: startup date [Wed Oct 10 22:06:54 CST 2018]; root of context hierarchy
+2018-10-10 22:06:54 background-preinit INFO HV000001: Hibernate Validator 5.3.5.Final
+2018-10-10 22:06:55 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 22:06:55 main INFO Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a3c9e93e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 22:06:58 main INFO Setting initial instance status as: STARTING
+2018-10-10 22:06:58 main INFO Initializing Eureka in region us-east-1
+2018-10-10 22:07:00 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 22:07:00 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 22:07:01 main INFO Using XML encoding codec XStreamXml
+2018-10-10 22:07:01 main INFO Using XML decoding codec XStreamXml
+2018-10-10 22:07:01 main INFO Resolving eureka endpoints via configuration
+2018-10-10 22:07:02 main INFO Disable delta property : false
+2018-10-10 22:07:02 main INFO Single vip registry refresh property : null
+2018-10-10 22:07:02 main INFO Force full registry fetch : false
+2018-10-10 22:07:02 main INFO Application is null : false
+2018-10-10 22:07:02 main INFO Registered Applications size is zero : true
+2018-10-10 22:07:02 main INFO Application version is -1: true
+2018-10-10 22:07:02 main INFO Getting all instance registry info from the eureka server
+2018-10-10 22:07:03 main INFO The response status is 200
+2018-10-10 22:07:03 main INFO Not registering with Eureka server per configuration
+2018-10-10 22:07:03 main INFO Discovery Client initialized at timestamp 1539180423177 with initial instances count: 2
+2018-10-10 22:07:06 main INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 22:07:12 main INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 22:07:12 main INFO Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='https://github.com/X-yong/web-footmark.git/config-repo/web-portal-dev.yml']]]
+2018-10-10 22:07:12 main INFO The following profiles are active: dev
+2018-10-10 22:07:14 main INFO Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 22:07:15 main INFO BeanFactory id=258247ad-a8c8-3e79-9bd6-de98fb196fb8
+2018-10-10 22:07:15 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 22:07:15 main INFO Bean 'com.footmark.portal.api.TestUserFeignService' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 22:07:15 main INFO Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$b9dc8c82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 22:07:15 main INFO Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a3c9e93e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 22:07:15 main INFO Starting service Tomcat
+2018-10-10 22:07:15 main INFO Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-10-10 22:07:16 localhost-startStop-1 INFO Initializing Spring embedded WebApplicationContext
+2018-10-10 22:07:16 localhost-startStop-1 INFO Root WebApplicationContext: initialization completed in 3416 ms
+2018-10-10 22:07:17 main INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@79604abe: startup date [Wed Oct 10 22:07:17 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43d9f1a2
+2018-10-10 22:07:17 main INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 22:07:18 main INFO Mapped "{[/web-portal/test-one],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void com.footmark.portal.controller.TestUser.testUser(com.web.common.footmark.User)
+2018-10-10 22:07:18 main INFO Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-10 22:07:18 main INFO Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-10-10 22:07:18 main INFO Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-10-10 22:07:18 main INFO Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-10-10 22:07:18 main INFO Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 22:07:18 main INFO Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 22:07:22 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 22:07:22 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 22:07:22 main WARN No URLs will be polled as dynamic configuration sources.
+2018-10-10 22:07:22 main INFO To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-10-10 22:07:22 main INFO Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43d9f1a2: startup date [Wed Oct 10 22:07:12 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35841320
+2018-10-10 22:07:22 main INFO Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 22:07:22 main INFO Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 22:07:22 main INFO Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 22:07:23 main INFO SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43d9f1a2: startup date [Wed Oct 10 22:07:12 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35841320] and template loader path [classpath:/templates/]
+2018-10-10 22:07:23 main INFO ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-10-10 22:07:23 main INFO Shutting down DiscoveryClient ...
+2018-10-10 22:07:23 main INFO Completed shut down of DiscoveryClient
+2018-10-10 22:07:23 main INFO Registering beans for JMX exposure on startup
+2018-10-10 22:07:23 main INFO Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-10-10 22:07:23 main INFO Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-10-10 22:07:23 main INFO Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-10-10 22:07:23 main INFO Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2018-10-10 22:07:23 main INFO Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-10-10 22:07:23 main INFO Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=43d9f1a2,type=ConfigurationPropertiesRebinder]
+2018-10-10 22:07:23 main INFO Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-10-10 22:07:24 main INFO Starting beans in phase 0
+2018-10-10 22:07:24 main INFO Setting initial instance status as: STARTING
+2018-10-10 22:07:24 main INFO Initializing Eureka in region us-east-1
+2018-10-10 22:07:24 main INFO Using JSON encoding codec LegacyJacksonJson
+2018-10-10 22:07:24 main INFO Using JSON decoding codec LegacyJacksonJson
+2018-10-10 22:07:24 main INFO Using XML encoding codec XStreamXml
+2018-10-10 22:07:24 main INFO Using XML decoding codec XStreamXml
+2018-10-10 22:07:24 main INFO Resolving eureka endpoints via configuration
+2018-10-10 22:07:24 main INFO Disable delta property : false
+2018-10-10 22:07:24 main INFO Single vip registry refresh property : null
+2018-10-10 22:07:24 main INFO Force full registry fetch : false
+2018-10-10 22:07:24 main INFO Application is null : false
+2018-10-10 22:07:24 main INFO Registered Applications size is zero : true
+2018-10-10 22:07:24 main INFO Application version is -1: true
+2018-10-10 22:07:24 main INFO Getting all instance registry info from the eureka server
+2018-10-10 22:07:24 main INFO The response status is 200
+2018-10-10 22:07:24 main INFO Starting heartbeat executor: renew interval is: 10
+2018-10-10 22:07:24 main INFO InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-10 22:07:24 main INFO Discovery Client initialized at timestamp 1539180444766 with initial instances count: 2
+2018-10-10 22:07:24 main INFO Registering application web-portal with eureka with status UP
+2018-10-10 22:07:24 main INFO Saw local status change event StatusChangeEvent [timestamp=1539180444795, current=UP, previous=STARTING]
+2018-10-10 22:07:24 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385: registering service...
+2018-10-10 22:07:24 DiscoveryClient-InstanceInfoReplicator-0 INFO DiscoveryClient_WEB-PORTAL/192.168.1.101:8385 - registration status: 204
+2018-10-10 22:07:24 main INFO Starting beans in phase 2147483647
+2018-10-10 22:07:24 main INFO Context refreshed
+2018-10-10 22:07:24 main INFO Found 1 custom documentation plugin(s)
+2018-10-10 22:07:24 main INFO Scanning for api listing references
+2018-10-10 22:07:25 main INFO Initializing ProtocolHandler ["http-nio-8385"]
+2018-10-10 22:07:25 main INFO Starting ProtocolHandler ["http-nio-8385"]
+2018-10-10 22:07:25 main INFO Using a shared selector for servlet write/read
+2018-10-10 22:07:25 main INFO Updating port to 8385
+2018-10-10 22:07:25 main INFO Started WebPortalApplication in 35.416 seconds (JVM running for 41.016)
+2018-10-10 22:07:25 RMI TCP Connection(4)-127.0.0.1 INFO Fetching config from server at: http://192.168.1.101:22222/
+2018-10-10 22:07:30 http-nio-8385-exec-2 INFO Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-10 22:07:30 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-10 22:07:30 http-nio-8385-exec-2 INFO FrameworkServlet 'dispatcherServlet': initialization completed in 93 ms
+2018-10-10 22:07:31 RMI TCP Connection(4)-127.0.0.1 INFO Located environment: name=web-portal, profiles=[dev], label=master, version=5de3fbf5e80d978120171ac58c5fc6074914d16e, state=null
+2018-10-10 22:07:40 http-nio-8385-exec-3 INFO Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6387a69d: startup date [Wed Oct 10 22:07:40 CST 2018]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43d9f1a2
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO Flipping property: web-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO Shutdown hook installed for: NFLoadBalancer-PingTimer-web-service
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO Client: web-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO Using serverListUpdater PollingServerListUpdater
+2018-10-10 22:07:41 http-nio-8385-exec-3 INFO DynamicServerListLoadBalancer for client web-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=web-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@677711a0
+2018-10-10 22:07:41 http-nio-8385-exec-3 ERROR Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: web-service] with root cause
+com.netflix.client.ClientException: Load balancer does not have available server for client: web-service
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10211)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10307)
+	at rx.Observable.subscribe(Observable.java:10274)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:445)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:342)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:117)
+	at org.springframework.cloud.netflix.feign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:97)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:76)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy134.testUser(Unknown Source)
+	at com.footmark.portal.controller.TestUser.testUser(TestUser.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.footmark.portal.config.PortalFilter.doFilter(PortalFilter.java:72)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

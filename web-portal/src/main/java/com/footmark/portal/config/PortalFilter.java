@@ -1,7 +1,7 @@
-/*
 package com.footmark.portal.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.web.common.footmark.InterfaceResult;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,19 +13,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-
-*/
-/**
+/*
  * @Description : 请求过滤器
  * @Author : xiongyong
  * @Date : 2018/5/29
- *//*
+ */
 
 
-@WebFilter(filterName = "ShoppFilter", urlPatterns = {"/dpca-shopp/*"})
-public class ShoppFilter implements Filter {
+@WebFilter(filterName = "PortalFilter", urlPatterns = {"/web-portal/*"})
+public class PortalFilter implements Filter {
 
-    private static final Logger logger = LoggerFactory.getLogger(ShoppFilter.class);
+    private static final Logger logger = LoggerFactory.getLogger(PortalFilter.class);
     private final static ObjectMapper objectMapper = new ObjectMapper();
     @Autowired
     private RedisService redisService;
@@ -46,41 +44,26 @@ public class ShoppFilter implements Filter {
         try {
             //获取header参数
             String token = httpServletRequest.getHeader("token");
-            if (StringUtils.isNoneBlank(token)&&redisService.hasKey(token)){
+            if (StringUtils.isNotEmpty(token)&&redisService.hasKey(token)){
                 if (redisService.get(token) == null) {
                     httpServletResponse.setHeader("Content-type", "application/json;charset=UTF-8");
 
                     PrintWriter pw = httpServletResponse.getWriter();
-                    interfaceResult.setCode(ResultEnum.TOKEN_INVALID_ERROR.getCode());
-                    interfaceResult.setMsg(ResultEnum.TOKEN_INVALID_ERROR.getMessage());
+                    interfaceResult.setCode("000");
+                    interfaceResult.setMsg("token过期，请重新登录");
 
                     pw.write(objectMapper.writeValueAsString(interfaceResult));
                     logger.error("token过期，请重新登录");
                     return;
                 }
-                try {
-                    NtspAppUserinfo ntspAppUserinfo = (NtspAppUserinfo) redisService.get(token);
-                }catch (ClassCastException e){
-                    redisService.expire(token,600);
-                }
-            }else{
-                if((!httpServletRequest.getRequestURI().contains("/dpca-shopp/user/login"))&&(!httpServletRequest.getRequestURI().contains("/dpca-shopp/user/logout"))&&(!httpServletRequest.getRequestURI().contains("/dpca-shopp/user/app/login"))){
-                    httpServletResponse.setHeader("Content-type", "application/json;charset=UTF-8");
-                    PrintWriter pw = httpServletResponse.getWriter();
-                    interfaceResult.setCode(ResultEnum.TOKEN_INVALID_ERROR.getCode());
-                    interfaceResult.setMsg(ResultEnum.TOKEN_INVALID_ERROR.getMessage());
 
-                    pw.write(objectMapper.writeValueAsString(interfaceResult));
-                    logger.error("token过期，请重新登录");
-                    return;
-                }
             }
 
         } catch (Exception e) {
             logger.error(e.toString());
             httpServletResponse.setHeader("Content-type", "application/json;charset=UTF-8");
-            interfaceResult.setCode(ResultEnum.UNKONW_ERROR.getCode());
-            interfaceResult.setMsg(ResultEnum.UNKONW_ERROR.getMessage());
+            interfaceResult.setCode("000");
+            interfaceResult.setMsg("系统异常");
 
             PrintWriter pw = (servletResponse).getWriter();
             pw.write(objectMapper.writeValueAsString(interfaceResult));
@@ -94,4 +77,3 @@ public class ShoppFilter implements Filter {
         System.out.println("-----------------过滤器销毁-----------------》");
     }
 }
-*/
