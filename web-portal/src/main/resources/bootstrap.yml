@@ -1,0 +1,64 @@
+spring:
+ jackson:
+  date-format: yyyy-MM-dd HH:mm:ss
+  time-zone: GMT+8
+ application:
+  name: web-portal
+ profiles:
+  active:
+   - dev
+ cloud:
+  inetutils:
+    ignoredInterfaces:
+      - docker*
+      - veth*
+      - lo
+
+#pagehelper分页插件
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+
+eureka:
+ instance:
+   prefer-ip-address: true
+   lease-renewal-interval-in-seconds: 10
+   lease-expiration-duration-in-seconds: 30
+   instance-id: ${spring.cloud.client.ip-address}:${server.port}
+ client:
+   registry-fetch-interval-seconds: 5
+    # defaultZone: http://localhost:1111/eureka/
+   #healthc
+heck:
+    # enabled: true
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  ServerListRefreshInterval: 5000
+server:
+  port: 8385
+  tomcat:
+    max-http-post-size: 50971520
+    
+logging:
+  level:
+    com.cusc.dpca.shopp.dao: debug
+
+hystrix:
+ command:
+  default:
+   execution:
+    timeout:
+#      enabled: false
+    isolation:
+     thread:
+      timeoutInMilliseconds: 10000
+ threadpool:
+  default:
+   coreSize: 50
+   maxQueueSize: 100
+   queueSizeRejectionThreshold: 100

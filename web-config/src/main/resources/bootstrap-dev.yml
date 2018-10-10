@@ -20,8 +20,8 @@ spring:
           uri: https://github.com/X-yong/web-footmark.git    # 配置gitlab仓库的地址，注意，此处必须以.git结尾
           search-paths: /web-footmark/config-repo # gitlab仓库地址下的相对地址，可以配置多个，用,分割。
           username: X-yong
-          password: XY728165842XY
-          default-label: develop
+          password: XY728165842xy
+          default-label: master
  # rabbitmq:
  #   host: 10.26.193.157
   #  port: 5672
