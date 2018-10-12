@@ -22,9 +22,5 @@ spring:
           username: X-yong
           password: XY159753xy
           default-label: master
- # rabbitmq:
- #   host: 127.0.0.1
-  #  port: 5672
-   # username:
-    #password:
+
 
