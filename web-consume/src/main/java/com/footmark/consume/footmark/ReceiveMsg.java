@@ -1,9 +1,8 @@
-package com.footmark.service.controller;
+package com.footmark.consume.footmark;
 
-import com.footmark.service.config.RabbitmqConfig;
 import com.web.common.footmark.User;
-import org.springframework.amqp.core.ExchangeTypes;
-import org.springframework.amqp.rabbit.annotation.*;
+import org.springframework.amqp.rabbit.annotation.RabbitHandler;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @Date : 2018/10/12 11:08
  */
 @Component
-@RabbitListener(queues = RabbitmqConfig.QUEUE)
+@RabbitListener(queues = "test")
 public class ReceiveMsg {
     @RabbitHandler
     public void receive(User content) {

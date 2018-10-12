@@ -57,6 +57,7 @@
         <module>web-portal</module>
         <module>web-service</module>
         <module>web-common</module>
+        <module>web-consume</module>
 
     </modules>
 
