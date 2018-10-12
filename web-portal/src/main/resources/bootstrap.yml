@@ -56,7 +56,7 @@ hystrix:
 #      enabled: false
     isolation:
      thread:
-      timeoutInMilliseconds: 10000
+      timeoutInMilliseconds: 60000
  threadpool:
   default:
    coreSize: 50

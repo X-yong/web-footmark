@@ -1,17 +1,17 @@
-package com.footmark.service.dao;
+package com.footmark.service.service;
 
 import com.web.common.footmark.User;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * @Description :
  * @Author : xiongyong
- * @Date : 2018/10/10 13:17
+ * @Date : 2018/10/11 9:13
  */
-@Repository
-public interface TestUserMapper {
+
+public interface TestUserService {
 
     /**
      * description: 查询用户信息
@@ -21,12 +21,13 @@ public interface TestUserMapper {
      * @date   : 2018/10/11 9:15
      */
     List<User> queryUserInfo(User user);
+
     /**
-     * description: 保存用户信息
+     * description: 查询用户信息
      * @author : xiongyong
      * @param  :  user
      * @return : List<User>
      * @date   : 2018/10/11 9:15
      */
-     void saveUserInfo(List<User> users);
-}
+    void saveUserInfo(List<User> users);
+ }

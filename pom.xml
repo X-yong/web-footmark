@@ -6,7 +6,7 @@
     <groupId>com.web.footmark</groupId>
     <artifactId>footmark</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>footmark</name>
     <description>Demo project for Spring Boot</description>

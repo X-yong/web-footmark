@@ -42,6 +42,8 @@ eureka:
     # enabled: true
 
 ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
   ServerListRefreshInterval: 5000
 server:
   port: 8799

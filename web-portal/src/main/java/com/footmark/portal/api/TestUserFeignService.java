@@ -7,6 +7,8 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
 /**
  * @Description :
  * @Author : xiongyong
@@ -15,8 +17,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(value = "web-service")
 public interface TestUserFeignService {
 
-    @PostMapping(value = "web-service/test-one", consumes = {"application/json"}, produces = {"application/json"})
+    @PostMapping(value = "web-service/user/queryUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
     @ApiImplicitParam(name = "user", value = "user", required = true, dataType = "User")
-    void testUser(@RequestBody  User user);
+    List<User> queryUserInfo(@RequestBody  User user);
+
+    @PostMapping(value = "web-service/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
+    @ApiOperation(value = "测试", notes = "测试")
+    @ApiImplicitParam(name = "list", value = "list", required = true, dataType = "List")
+    List<User> saveUserInfo(@RequestBody  List<User> users);
 }
