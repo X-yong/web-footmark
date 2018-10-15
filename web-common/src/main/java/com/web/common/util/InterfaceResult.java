@@ -1,4 +1,4 @@
-package com.web.common.footmark;
+package com.web.common.util;
 
 import java.io.Serializable;
 

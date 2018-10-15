@@ -1,7 +1,7 @@
 package com.footmark.portal.controller;
 
 import com.footmark.portal.config.RabbitmqConfig;
-import com.web.common.footmark.InterfaceResult;
+import com.web.common.util.InterfaceResult;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.amqp.core.AmqpTemplate;

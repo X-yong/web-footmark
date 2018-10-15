@@ -1,7 +1,6 @@
 package com.footmark.service.controller;
 
 import com.footmark.service.service.TestUserService;
-import com.web.common.footmark.InterfaceResult;
 import com.web.common.footmark.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;

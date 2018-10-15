@@ -1,8 +1,7 @@
 package com.footmark.portal.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.web.common.footmark.InterfaceResult;
-import com.web.common.footmark.User;
+import com.web.common.util.InterfaceResult;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.UUID;
 /*
  * @Description : 请求过滤器
  * @Author : xiongyong

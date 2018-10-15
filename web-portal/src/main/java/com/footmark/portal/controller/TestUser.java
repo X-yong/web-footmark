@@ -1,7 +1,7 @@
 package com.footmark.portal.controller;
 
 import com.footmark.portal.api.TestUserFeignService;
-import com.web.common.footmark.InterfaceResult;
+import com.web.common.util.InterfaceResult;
 import com.web.common.footmark.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
