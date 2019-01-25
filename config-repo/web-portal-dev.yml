@@ -1,6 +1,6 @@
 spring:
  datasource:
-   url: jdbc:mysql://192.168.21.129:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+   url: jdbc:mysql://192.168.21.128:33060/test?useUnicode=true&characterEncoding=utf8&useSSL=false
    username: root
    password: 123456
    driver-class-name: com.mysql.jdbc.Driver
@@ -21,17 +21,17 @@ spring:
    maxPoolPreparedStatementPerConnectionSize: 20
    # 通过connectProperties属性来打开mergeSql功能;慢SQL记录
    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
- redis:
-   database: 0
-   host: localhost
-   port: 6379
-   password:
-   pool:
-     max-active: 500
-     max-wait: 1000
-     max-idle: 8
-     min-idle: 0
-   timeout: 60000
+# redis:
+#   database: 0
+#   host: localhost
+#   port: 6379
+#   password:
+#   pool:
+#     max-active: 500
+#     max-wait: 1000
+#     max-idle: 8
+#     min-idle: 0
+#   timeout: 60000
 
 
 

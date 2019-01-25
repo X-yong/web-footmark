@@ -1,10 +1,10 @@
 spring:
-  rabbitmq:
-   host: 192.168.21.129
-   port: 5672
-   #访问rabbitMq的用户账号和密码
-   username: guest
-   password: guest
+#  rabbitmq:
+#   host: 192.168.21.128
+#   port: 5672
+#   #访问rabbitMq的用户账号和密码
+#   username: guest
+#   password: guest
 
   cloud:
     config:
@@ -14,10 +14,13 @@ spring:
       profile: dev
       label: master
       failFast: true
+    nacos:
+      discovery:
+       server-addr: 192.168.21.128:8848
 management:
   security:
     enabled: false  #忽略权限拦截
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:11111/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:11111/eureka/
