@@ -11,16 +11,16 @@ spring:
     - veth*
     - lo
 
-#eureka:
-# instance:
-#   prefer-ip-address: true
-#   lease-renewal-interval-in-seconds: 10
-#   lease-expiration-duration-in-seconds: 30
-#   instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-# client:
-#   service-url:
+eureka:
+ instance:
+   prefer-ip-address: true
+   lease-renewal-interval-in-seconds: 10
+   lease-expiration-duration-in-seconds: 30
+   instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+ client:
+   service-url:
  #    defaultZone: http://10.26.193.156:1111/eureka/
-#     defaultZone: http://localhost:11111/eureka/
+     defaultZone: http://localhost:11111/eureka/
 #   healthcheck:
 #     enabled: true
    registry-fetch-interval-seconds: 5

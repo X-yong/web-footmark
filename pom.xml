@@ -58,6 +58,7 @@
         <module>web-service</module>
         <module>web-common</module>
         <module>web-consume</module>
+        <module>web-user</module>
 
     </modules>
 

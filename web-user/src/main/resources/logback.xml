@@ -21,7 +21,7 @@
     <appender name="springboot-demo"  
         class="ch.qos.logback.core.rolling.RollingFileAppender">  
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>logs/logback/user%d{yyyy-M-d}.log
+            <FileNamePattern>logs/logback/user_%d{yyyy-M-d}.log
             </FileNamePattern>  
             <MaxHistory>100</MaxHistory>  
         </rollingPolicy>  
