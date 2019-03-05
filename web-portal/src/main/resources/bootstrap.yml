@@ -22,14 +22,14 @@ pagehelper:
   params: count=countSql
 
 
-#eureka:
-# instance:
-#   prefer-ip-address: true
-#   lease-renewal-interval-in-seconds: 10
-#   lease-expiration-duration-in-seconds: 30
-#   instance-id: ${spring.cloud.client.ipAddress}:${server.port}
-# client:
-#   registry-fetch-interval-seconds: 5
+eureka:
+ instance:
+   prefer-ip-address: true
+   lease-renewal-interval-in-seconds: 10
+   lease-expiration-duration-in-seconds: 30
+   instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+ client:
+   registry-fetch-interval-seconds: 5
     # defaultZone: http://localhost:1111/eureka/
    #healthc
 heck:

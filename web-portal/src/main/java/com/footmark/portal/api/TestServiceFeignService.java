@@ -14,16 +14,16 @@ import java.util.List;
  * @Author : xiongyong
  * @Date : 2018/10/10 20:07
  */
-@FeignClient(value = "web-user")
-public interface TestUserFeignService {
+@FeignClient(value = "web-service")
+public interface TestServiceFeignService {
 
-    @PostMapping(value = "web-user/user/queryUserInfo", consumes = {"application/json"}, produces = {"application/json"})
+    @PostMapping(value = "web-service/user/queryUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
     @ApiImplicitParam(name = "user", value = "user", required = true, dataType = "User")
-    List<User> queryUserInfo(@RequestBody  User user);
+    List<User> queryUserInfo(@RequestBody User user);
 
-    @PostMapping(value = "web-user/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
+    @PostMapping(value = "web-service/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
     @ApiImplicitParam(name = "list", value = "list", required = true, dataType = "List")
-    List<User> saveUserInfo(@RequestBody  List<User> users);
+    List<User> saveUserInfo(@RequestBody List<User> users);
 }

@@ -1,3 +1,4 @@
+/*
 package com.footmark.service.controller;
 
 import com.web.common.footmark.GoodsInfo;
@@ -10,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+*/
 /**
  * @Description :
  * @Author : xiongyong
  * @Date : 2018/10/15 10:51
- */
+ *//*
+
 
 @RestController
 @RequestMapping("web-service")
@@ -34,3 +37,4 @@ public class TestSearch {
         System.out.println("查询结果："+elasticsearchRepository.findOne(1L));
     }
 }
+*/

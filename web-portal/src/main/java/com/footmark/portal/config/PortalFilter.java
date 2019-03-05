@@ -40,7 +40,7 @@ public class PortalFilter implements Filter {
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
         ServletRequest requestWrapper = new BodyReaderHttpServletRequestWrapper(httpServletRequest);
-        InterfaceResult interfaceResult = new InterfaceResult();
+       /* InterfaceResult interfaceResult = new InterfaceResult();
         try {
             //获取header参数
             String token = httpServletRequest.getHeader("token");
@@ -70,7 +70,7 @@ public class PortalFilter implements Filter {
             PrintWriter pw = (servletResponse).getWriter();
             pw.write(objectMapper.writeValueAsString(interfaceResult));
             return;
-        }
+        }*/
         filterChain.doFilter(requestWrapper, servletResponse);
     }
 
