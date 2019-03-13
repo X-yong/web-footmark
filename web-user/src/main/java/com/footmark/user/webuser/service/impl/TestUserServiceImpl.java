@@ -33,7 +33,7 @@ public class TestUserServiceImpl implements TestUserService {
     }
 
     /**
-     * description: 查询用户信息
+     * description: 保存用户信息
      * @param users
      * @return : List<User>
      * @author : xiongyong
@@ -41,39 +41,6 @@ public class TestUserServiceImpl implements TestUserService {
      */
     @Override
     public void saveUserInfo(List<User> users) {
-        int size = users.size();
-        for (int j = (size-1)*30; j <= size*30; j++) {
-            if(j == 0) {
-                j = 1;
-            }
-            final int index = j;
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    List<User> users1 = new ArrayList<>();
-                    for (int i = (index-1)*50000; i < 50000*index; i++) {
-                        users1.add(new User(i,"zhangsan"+i));
-                    }
-                    testUserMapper.saveUserInfo(users1);
-                }
-            }).start();
-        }
-
-      /*  for (int i = 1; i < 10000; i++) {
-            users.add(new User(i,"zhangsan"+i));
-        }
         testUserMapper.saveUserInfo(users);
-
-        List<User> users1 = new ArrayList<>();
-        for (int i = 10000; i < 20000; i++) {
-            users1.add(new User(i,"lisi"+i));
-        }
-        testUserMapper.saveUserInfo(users1);
-
-        List<User> users2 = new ArrayList<>();
-        for (int i = 20000; i < 30000; i++) {
-            users2.add(new User(i,"wangwu"+i));
-        }
-        testUserMapper.saveUserInfo(users2);*/
     }
 }

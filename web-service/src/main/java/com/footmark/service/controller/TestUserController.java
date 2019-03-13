@@ -35,7 +35,7 @@ public class TestUserController {
 
     @PostMapping(value = "/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
-    @ApiImplicitParam(name ="list" ,value = "list",required =false ,dataType = "List")
+   //@ApiImplicitParam(name ="users" ,value = "users",dataType = "List")
     public void saveUserInfo(@RequestBody List<User> users) {
         testUserService.saveUserInfo(users);
     }

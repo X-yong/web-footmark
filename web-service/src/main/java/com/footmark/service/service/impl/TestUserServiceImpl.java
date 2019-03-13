@@ -49,7 +49,5 @@ public class TestUserServiceImpl implements TestUserService {
     @Transactional
     public void saveUserInfo(List<User> users) {
             testUserMapper.saveUserInfo(users);
-        users.get(0).setId(users.get(0).getId() + 1);
-        testUserFeignService.saveUserInfo(users);
     }
 }

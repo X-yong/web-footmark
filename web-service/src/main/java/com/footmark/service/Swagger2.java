@@ -29,6 +29,6 @@ public class Swagger2 {
 
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("NTSP dpca-shopp 使用Swagger2 测试").description("测试swagger2")
-				.termsOfServiceUrl("http://localhost:8385/swagger-ui.html").version("1.0").build();
+				.termsOfServiceUrl("http://localhost:8799/swagger-ui.html").version("1.0").build();
 	}
 }

@@ -35,9 +35,9 @@ public class TestUserController {
 
     @PostMapping(value = "/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
-    @ApiImplicitParam(name ="list" ,value = "list",required =false ,dataType = "List")
+    //@ApiImplicitParam(name ="users" ,value = "users",required =false ,dataType = "List")
     public void saveUserInfo(@RequestBody List<User> users) {
-        throw new RuntimeException("手动抛出异常");
-       // testUserService.saveUserInfo(users);
+       // throw new RuntimeException("手动抛出异常");
+       testUserService.saveUserInfo(users);
     }
 }
