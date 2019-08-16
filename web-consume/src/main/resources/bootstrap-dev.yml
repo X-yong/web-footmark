@@ -13,10 +13,20 @@ spring:
       profile: dev
       label: master
       failFast: true
+
+  mail:
+    host: smtp.qq.com
+    username: 728165842@qq.com
+    password: XY728165842xy
+    default-encoding: utf-8
+
+
 management:
   security:
     enabled: false  #忽略权限拦截
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:11111/eureka/
+

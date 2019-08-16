@@ -8,11 +8,11 @@
         </encoder>  
     </appender>
     <!-- 文件输出-->
-    <appender name="portal"
+    <appender name="consume"
         class="ch.qos.logback.core.rolling.RollingFileAppender">  
         <!-- <Encoding>UTF-8</Encoding> -->  
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>logs/portal/portal-%d{yyyy-M-d}.log
+            <FileNamePattern>logs/consume/consume-%d{yyyy-M-d}.log
             </FileNamePattern>  
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>  
@@ -22,12 +22,12 @@
     </appender>  
 
     <!-- name包必须能够扫描到所有类，包括启动类 -->
-    <logger name="com.footmark.portal" level="info" additivity="false">
-         <appender-ref ref="portal" />
+    <logger name="com.footmark.consume" level="info" additivity="false">
+         <appender-ref ref="consume" />
          <appender-ref ref="stdout" />  
     </logger>  
     <root level="info">
-        <appender-ref ref="portal" />
+        <appender-ref ref="consume" />
         <appender-ref ref="stdout" />
     </root>  
 </configuration>    

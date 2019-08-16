@@ -1,13 +1,16 @@
+/*
 package com.web.common.footmark;
 
 import lombok.Data;
 import java.io.Serializable;
 import org.springframework.data.elasticsearch.annotations.Document;
+*/
 /**
  * @Description :
  * @Author : xiongyong
  * @Date : 2018/10/15 10:42
- */
+ *//*
+
 @Data
 @Document(indexName = "test",type = "goods")
 public class GoodsInfo implements Serializable {
@@ -24,3 +27,4 @@ public class GoodsInfo implements Serializable {
         this.description = description;
     }
 }
+*/

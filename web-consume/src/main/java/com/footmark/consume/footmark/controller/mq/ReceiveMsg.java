@@ -1,4 +1,4 @@
-package com.footmark.consume.footmark;
+package com.footmark.consume.footmark.controller.mq;
 
 import com.web.common.footmark.User;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;

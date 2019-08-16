@@ -20,6 +20,12 @@ public class InterfaceResult<T> implements Serializable {
 
     private T data;
 
+    private Integer pageNum;
+
+    private Integer pageSize;
+
+    private Integer total;
+
     public InterfaceResult(){
 
     }
@@ -32,6 +38,10 @@ public class InterfaceResult<T> implements Serializable {
         this.code = code;
         this.msg = msg;
         this.data = data;
+    }
+
+    public static InterfaceResult success (Object data) {
+      return new InterfaceResult("200","ok",data);
     }
 
     public static InterfaceResult build(String code, String msg, Object data) {
