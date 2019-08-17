@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.footmark.service.dao.TestUserMapper" >
 
-    <select id="queryUserInfo" parameterType="com.web.common.footmark.User" resultType="com.web.common.footmark.User">
+    <select id="queryUserInfo" parameterType="com.common.footmark.User" resultType="com.common.footmark.User">
         select * from user
         <where>
             <if test="id != null">

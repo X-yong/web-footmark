@@ -1,6 +1,6 @@
 package com.footmark.service.api;
 
-import com.web.common.footmark.User;
+import com.common.footmark.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.cloud.netflix.feign.FeignClient;

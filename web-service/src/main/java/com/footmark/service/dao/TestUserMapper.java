@@ -1,6 +1,6 @@
 package com.footmark.service.dao;
 
-import com.web.common.footmark.User;
+import com.common.footmark.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

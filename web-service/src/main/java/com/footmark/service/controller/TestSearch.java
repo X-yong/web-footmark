@@ -1,7 +1,7 @@
 /*
 package com.footmark.service.controller;
 
-import com.web.common.footmark.GoodsInfo;
+import com.common.footmark.GoodsInfo;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

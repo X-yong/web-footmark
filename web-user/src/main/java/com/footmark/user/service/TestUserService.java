@@ -1,4 +1,4 @@
-package com.footmark.service.service;
+package com.footmark.user.service;
 
 import com.common.footmark.User;
 

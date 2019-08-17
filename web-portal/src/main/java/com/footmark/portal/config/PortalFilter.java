@@ -1,8 +1,6 @@
 package com.footmark.portal.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.web.common.util.InterfaceResult;
-import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +10,6 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 /*
  * @Description : 请求过滤器
  * @Author : xiongyong

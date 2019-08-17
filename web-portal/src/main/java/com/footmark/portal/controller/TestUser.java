@@ -2,8 +2,8 @@ package com.footmark.portal.controller;
 
 import com.footmark.portal.api.TestServiceFeignService;
 import com.footmark.portal.api.TestUserFeignService;
-import com.web.common.util.InterfaceResult;
-import com.web.common.footmark.User;
+import com.common.util.InterfaceResult;
+import com.common.footmark.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

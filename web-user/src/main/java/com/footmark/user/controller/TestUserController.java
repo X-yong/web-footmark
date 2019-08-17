@@ -1,6 +1,6 @@
-package com.footmark.service.controller;
+package com.footmark.user.controller;
 
-import com.footmark.service.service.TestUserService;
+import com.footmark.user.service.TestUserService;
 import com.common.footmark.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -18,7 +18,7 @@ import java.util.List;
  * @Date : 2018/10/10 20:37
  */
 @RestController
-@RequestMapping("web-service")
+@RequestMapping("web-user")
 public class TestUserController {
 
     @Autowired
@@ -35,8 +35,9 @@ public class TestUserController {
 
     @PostMapping(value = "/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
-   //@ApiImplicitParam(name ="users" ,value = "users",dataType = "List")
+    //@ApiImplicitParam(name ="users" ,value = "users",required =false ,dataType = "List")
     public void saveUserInfo(@RequestBody List<User> users) {
-        testUserService.saveUserInfo(users);
+       // throw new RuntimeException("手动抛出异常");
+       testUserService.saveUserInfo(users);
     }
 }
