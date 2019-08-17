@@ -17,6 +17,7 @@ import java.util.Map;
 @Getter
 @ToString
 public class SendEmail implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String from;
 
@@ -33,5 +34,7 @@ public class SendEmail implements Serializable {
 
     private List<String> filePath;
 
+    private String type;
 
+    private Map param;
 }

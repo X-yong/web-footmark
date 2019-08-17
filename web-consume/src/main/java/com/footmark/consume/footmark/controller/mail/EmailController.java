@@ -1,4 +1,4 @@
-package com.footmark.consume.footmark.controller.mall;
+package com.footmark.consume.footmark.controller.mail;
 
 import com.footmark.consume.footmark.service.mall.EmailService;
 import com.web.common.footmark.consume.SendEmail;

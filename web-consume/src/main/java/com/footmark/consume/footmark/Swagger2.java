@@ -23,12 +23,12 @@ public class Swagger2 {
 	@Bean
 	public Docket createRestApi() {
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select()
-				.apis(RequestHandlerSelectors.basePackage("com.footmark.user.webuser.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.footmark.consume.footmark.controller"))
 				.paths(PathSelectors.any()).build();
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("NTSP dpca-shopp 使用Swagger2 测试").description("测试swagger2")
-				.termsOfServiceUrl("http://localhost:8899/swagger-ui.html").version("1.0").build();
+		return new ApiInfoBuilder().title("使用Swagger2 测试").description("测试swagger2")
+				.termsOfServiceUrl("http://localhost:8990/swagger-ui.html").version("1.0").build();
 	}
 }

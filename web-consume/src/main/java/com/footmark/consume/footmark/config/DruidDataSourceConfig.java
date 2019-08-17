@@ -1,3 +1,4 @@
+/*
 package com.footmark.consume.footmark.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
@@ -20,10 +21,12 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Properties;
 
+*/
 /**
  * druid连接池注册
  * @author WindyHu
- */
+ *//*
+
 @Configuration
 @MapperScan(basePackages = "com.footmark.service.dao",sqlSessionFactoryRef = "sqlSessionFactory")
 @Primary //在同样的DataSource中，首先使用被标注的DataSource
@@ -144,11 +147,13 @@ public class DruidDataSourceConfig extends DataSourceProperties {
             return datasource;
         }
 
-        /**
+        */
+/**
          * 分页插件
          * @author WindyHu
          * @return
-         */
+         *//*
+
         @Bean
         public PageHelper pageHelper() {
 
@@ -172,3 +177,4 @@ public class DruidDataSourceConfig extends DataSourceProperties {
 
     }
 }
+*/
