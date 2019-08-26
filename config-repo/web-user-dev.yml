@@ -38,5 +38,5 @@ spring:
    timeout: 60000
 
 aaa:
-  a: 12
+  a: 12333
 
