@@ -37,5 +37,6 @@ spring:
      min-idle: 0
    timeout: 60000
 
-
+aaa:
+  a: 1
 
