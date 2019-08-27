@@ -8,6 +8,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.thymeleaf.TemplateEngine;
@@ -38,8 +39,9 @@ public class EmailServiceImpl implements EmailService {
     private TemplateEngine templateEngine;
 
     @Override
+    @Async
     public Map sendEmail(SendEmail sendEmail) {
-
+        log.info("---------------发送邮件---------------------");
         Map res = new HashMap();
 
         if ("template".equals(sendEmail.getType())) {
@@ -73,7 +75,7 @@ public class EmailServiceImpl implements EmailService {
         message.setFrom(sendEmail.getFrom());
         message.setSentDate(new Date());
         mailSender.send(message);
-
+        log.info("---------------发送邮件成功---------------------");
         return map;
     }
 
@@ -118,30 +120,44 @@ public class EmailServiceImpl implements EmailService {
         List<Map> images = sendEmail.getImages();
         if (!CollectionUtils.isEmpty(images)) {
             StringBuilder stringBuilder = new StringBuilder("<html><body>");
+            stringBuilder.append("<P>");
             stringBuilder.append(content);
+            stringBuilder.append("</P>");
             for (int i = 0; i < images.size(); i++) {
                 Map<String,String> image = images.get(i);
                 String ipath = image.get("rscPath");
                 String id = image.get("rscId");
                 FileSystemResource imagefile = new FileSystemResource(new File(ipath));
                 helper.addInline(id,imagefile);
-                stringBuilder.append("<img src=\'cid:"+ id +"\' >");
+                stringBuilder.append("<div><img src=\'cid:"+ id +"\' /></div>");
+                if (i == images.size()-1) {
+                    helper.addInline(id,imagefile);
+                    stringBuilder.append("<div style=\"display: none\"><img src=\'cid:"+ id +"\' /></div>");
+                }
             }
             stringBuilder.append("</body></html>");
             content = stringBuilder.toString();
         }
-
+        log.info(content);
         helper.setText(content,true);
         mailSender.send(mimeMessage);
+        log.info("---------------发送邮件成功---------------------");
         return map;
     }
 
     public void  sendTemplateMail(SendEmail sendEmail) {
         try {
             Context context = new Context();
-            //设置参数
-            context.setVariable("des", "模板邮件描述");
-            context.setVariable("text", "这是模板邮件啦啦啦啦啦");
+            Map params = sendEmail.getParam();
+            if (params == null) {
+                throw new RuntimeException("参数不能为空");
+            }
+
+            params.forEach((k,v) -> {
+                //设置参数
+                context.setVariable(k.toString(), v);
+            });
+
             //emailTemplate为模板文件的文件名，即html demo的文件名
             String tempContext = templateEngine.process("emailTemplate", context);
             sendEmail.setContent(tempContext);

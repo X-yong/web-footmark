@@ -10,7 +10,6 @@ import java.util.List;
  * @Author : xiongyong
  * @Date : 2018/10/10 13:17
  */
-@Repository
 public interface TestUserMapper {
 
     /**

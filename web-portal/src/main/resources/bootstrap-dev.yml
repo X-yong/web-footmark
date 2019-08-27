@@ -1,11 +1,4 @@
 spring:
-  rabbitmq:
-   host: 192.168.21.129
-   port: 5672
-   #访问rabbitMq的用户账号和密码
-   username: guest
-   password: guest
-
   cloud:
     config:
       discovery:

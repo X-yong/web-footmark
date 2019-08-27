@@ -1,11 +1,13 @@
 package com.common.util;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * Created by zou on 2018/5/18.
  */
-@lombok.Data
+@Data
 public class InterfaceResult<T> implements Serializable {
 
 
@@ -40,8 +42,8 @@ public class InterfaceResult<T> implements Serializable {
         this.data = data;
     }
 
-    public static InterfaceResult success (Object data) {
-      return new InterfaceResult("200","ok",data);
+    public static InterfaceResult success (String code, String msg ,Object data) {
+      return new InterfaceResult(code,msg,data);
     }
 
     public static InterfaceResult build(String code, String msg, Object data) {

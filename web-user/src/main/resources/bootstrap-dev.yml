@@ -5,14 +5,14 @@ spring:
      #访问rabbitMq的用户账号和密码
      username: guest
      password: guest
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: web-config
-      profile: dev
-      label: master
-      failFast: true
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: web-config
+#      profile: dev
+#      label: master
+#      failFast: true
 management:
   security:
     enabled: false  #忽略权限拦截

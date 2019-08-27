@@ -34,11 +34,11 @@ ribbon:
   ServerListRefreshInterval: 5000
 server:
   port: 8990
-
+  context-path: /consume
 
 logging:
   level:
-    com.footmark.service.dao: debug
+    com.footmark.consume.dao: debug
 
 hystrix:
  command:

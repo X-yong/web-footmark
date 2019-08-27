@@ -1,5 +1,6 @@
 package com.footmark.portal.controller;
 
+import com.footmark.portal.api.TestConsumFeignService;
 import com.footmark.portal.api.TestServiceFeignService;
 import com.footmark.portal.api.TestUserFeignService;
 import com.common.util.InterfaceResult;
@@ -28,6 +29,9 @@ public class TestUser {
     @Autowired
     private TestServiceFeignService testServiceFeignService;
 
+    @Autowired
+    private TestConsumFeignService testConsumFeignService;
+
 
     @PostMapping(value = "/user/queryUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
@@ -45,9 +49,19 @@ public class TestUser {
 
     @PostMapping(value = "/user/saveUserInfo", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
-    @ApiImplicitParam(name ="list" ,value = "list",required =false ,dataType = "List")
+    //@ApiImplicitParam(name ="list" ,value = "list",required =false ,dataType = "List")
     public InterfaceResult saveUserInfo(@RequestBody List<User> users) {
         testServiceFeignService.saveUserInfo(users);
+        InterfaceResult interfaceResult = new InterfaceResult<>();
+        interfaceResult.setCode("200");
+        interfaceResult.setMsg("ok");
+
+        return interfaceResult;
+    }
+    @PostMapping(value = "/t/test", consumes = {"application/json"}, produces = {"application/json"})
+    @ApiOperation(value = "测试", notes = "测试")
+    public InterfaceResult saveUserInfo() {
+        testConsumFeignService.test();
         InterfaceResult interfaceResult = new InterfaceResult<>();
         interfaceResult.setCode("200");
         interfaceResult.setMsg("ok");

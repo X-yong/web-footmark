@@ -1,10 +1,10 @@
-package com.footmark.portal.config;
+package com.footmark.consume.config;
 
+import com.common.enums.ResultEnum;
+import com.common.util.InterfaceResult;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.netflix.hystrix.exception.HystrixRuntimeException;
-import com.common.enums.ResultEnum;
-import com.common.util.InterfaceResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -105,4 +105,10 @@ public class GlobalExceptionHandler {
 		return InterfaceResult.build(ResultEnum.UNKONW_ERROR.getCode(), "接口访问异常");
 	}
 
+	/*@ExceptionHandler(Exception.class)
+	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+	public InterfaceResult exception() {
+		logger.error("---------> Internal Server Error!");
+		return InterfaceResult.build("500", "内部错误");
+	}*/
 }

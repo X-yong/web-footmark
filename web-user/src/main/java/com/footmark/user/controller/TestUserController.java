@@ -37,7 +37,7 @@ public class TestUserController {
     @ApiOperation(value = "测试", notes = "测试")
     //@ApiImplicitParam(name ="users" ,value = "users",required =false ,dataType = "List")
     public void saveUserInfo(@RequestBody List<User> users) {
-       // throw new RuntimeException("手动抛出异常");
-       testUserService.saveUserInfo(users);
+        throw new RuntimeException("手动抛出异常");
+       //testUserService.saveUserInfo(users);
     }
 }

@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.Callable;
+
 /**
  * @Description:
  * @Author: panda
@@ -30,7 +32,7 @@ public class EmailController {
     @ApiOperation(value = "邮件发送",notes = "邮件发送")
     @ApiImplicitParam(value = "sendEmail" ,name = "sendEmail",dataType = "SendEmail")
     public InterfaceResult sendEmail(@RequestBody SendEmail sendEmail ) {
-        return InterfaceResult.success(emailService.sendEmail(sendEmail));
+        return InterfaceResult.success("200","ok",emailService.sendEmail(sendEmail));
     }
 
 

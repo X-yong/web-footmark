@@ -36,5 +36,5 @@ public class SendEmail implements Serializable {
 
     private String type;
 
-    private Map param;
+    private Map<String, Object> param;
 }
