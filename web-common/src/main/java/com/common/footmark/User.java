@@ -1,5 +1,7 @@
 package com.common.footmark;
 
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -15,6 +17,7 @@ public class User implements Serializable {
     private static final long serialVersionUID = -1L;
 
     @ApiModelProperty(value = "id")
+    @TableId(value = "id",type = IdType.AUTO)
     private Integer id;
 
     @ApiModelProperty(value = "name")

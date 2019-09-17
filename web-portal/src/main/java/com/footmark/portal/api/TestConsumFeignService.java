@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @Author : xiongyong
  * @Date : 2018/10/10 20:07
  */
-@FeignClient(value = "web-consum")
+@FeignClient(value = "web-consume")
 public interface TestConsumFeignService {
 
-    @PostMapping(value = "web-consum/t/test", consumes = {"application/json"}, produces = {"application/json"})
+    @PostMapping(value = "/consume/t/test", consumes = {"application/json"}, produces = {"application/json"})
     @ApiOperation(value = "测试", notes = "测试")
     void test();
 }

@@ -1,15 +1,23 @@
 spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: web-config
-      profile: dev
-      label: master
-      failFast: true
+#  rabbitmq:
+#     host: 192.168.21.129
+#     port: 5672
+#     #访问rabbitMq的用户账号和密码
+#     username: guest
+#     password: guest
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: web-config
+#      profile: dev
+#      label: master
+#      failFast: true
+
 management:
   security:
     enabled: false  #忽略权限拦截
+
 eureka:
   client:
     service-url:
