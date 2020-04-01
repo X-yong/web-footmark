@@ -14,7 +14,7 @@ eureka:
     fetch-registry: false
     service-url:
 #      defaultZone: http://10.26.193.156:${server.port}/eureka/
-      defaultZone: http://47.174.173.225:${server.port}/eureka/
+      defaultZone: http://47.114.173.225:${server.port}/eureka/
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}

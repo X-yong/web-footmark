@@ -21,4 +21,4 @@ management:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:11111/eureka/
+      defaultZone: http://47.114.173.225:11111/eureka/
