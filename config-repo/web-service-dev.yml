@@ -22,11 +22,11 @@ spring:
    # 通过connectProperties属性来打开mergeSql功能;慢SQL记录
    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
  # elasticsearch 搜索引擎
- data:
-   elasticsearch:
-     cluster-nodes : http://192.168.21.129:9300
-     repositories:
-       enabled: true
+# data:
+#   elasticsearch:
+#     cluster-nodes : http://192.168.21.129:9300
+#     repositories:
+#       enabled: true
 
  redis:
    database: 0
